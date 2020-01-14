@@ -1,0 +1,210 @@
+{
+    "my.key": {
+        "translation": "",
+        "notes": ""
+    },
+    "t7reksg8ogy8:4ZQtjYftNKaoKWuksM0sS0:copy": {
+        "translation": "Diese Beispielanwendung is so konfiguriert worden, dass sie sich sowohl mit der Deliver API als auch der Preview API verbinden kann.\n\nZum Spaß können Sie die Formatierung des Wortes *Pizza* ändern, indem sie im oberen Menü die Auswahl von `API: Preview (unveröffentlichter Inhalt)` auf `API: Delivery (veröffentlichter Inhalt)` ändern.\n\n> Hinweis: Die Content Preview API ist nicht hinter einem Cache und daher etwas langsamer als die Delivery API.",
+        "notes": ""
+    },
+    "t7reksg8ogy8:Dy6jo5j4goU2C4sc8Kwkk:title": {
+        "translation": "Laden von Entwürfen",
+        "notes": ""
+    },
+    "t7reksg8ogy8:1wMm7tnKi0kIYsI24eYiKS:copy": {
+        "translation": "Bevor Sie Inhalte veröffentlichen, können Sie sie mittels unserer Content Preview API ansehen. Die Preview API und Delivery API akzeptieren beide die gleichen Parameter und liefern die gleichen `payload`-Strukturen zurück.\n\nUm Inhalte im Entwurfs-Zustand zu laden, müssen Sie die Konfiguration des `Clients` um den Preview API Token erweitern:",
+        "notes": ""
+    },
+    "dsf": {
+        "translation": "",
+        "notes": ""
+    },
+    "dsfd": {
+        "translation": "",
+        "notes": ""
+    },
+    "dsfdc": {
+        "translation": "",
+        "notes": ""
+    },
+    "dsfdccc": {
+        "translation": "",
+        "notes": ""
+    },
+    "dsfdcccv": {
+        "translation": "",
+        "notes": ""
+    },
+    "rgsdfg": {
+        "translation": "",
+        "notes": ""
+    },
+    "sdf": {
+        "translation": "",
+        "notes": ""
+    },
+    "t7reksg8ogy8:3jkW4CdxPqu8Q2oSgCeOuy:title": {
+        "translation": "Laden aller Einträge",
+        "notes": ""
+    },
+    "t7reksg8ogy8:3op5VIqGZiwoe06c8IQIMO:title": {
+        "translation": "APIs",
+        "notes": ""
+    },
+    "t7reksg8ogy8:5VWYVBc39Cia0sqqaeyiIW:title": {
+        "translation": "Zusammenfassung",
+        "notes": ""
+    },
+    "t7reksg8ogy8:5DtGCVHfr2OC2Is6KceS0G:caption": {
+        "translation": "Die Contentful Web-Anwendung ist eine single page Anwendung, die die Content Management API benutzt. Sie kann genutzt werden um Inhalte zu Erzeugen und um Einstellungen an Contentful vorzunehmen.",
+        "notes": ""
+    },
+    "t7reksg8ogy8:3UVMv9wHuw4auWMQ0qSamY:copy": {
+        "translation": "## Validierung von Feldern\nMit Hilfe von Validierungsregeln kann eine gewisse Konsistenz erzwungen werden. So kann z.B. verhindert werden, dass ungütlige Daten eine Anwendung zum Absturz bringen.\n\nBeispiele für geläufige Validierungsregeln sind Limitierungen der Zeichenanzahl, erzwingen von gewissen Werten wie z.B. `Anfänger(in)`, `Fortgeschrittene(r)`, `Profi`. Auf den folgenden Seiten können Sie mehr über Validierung von feldern lernen:\n\n- [Fields](https:\/\/www.contentful.com\/developers\/docs\/concepts\/data-model\/#fields)\n- [Available validations](https:\/\/www.contentful.com\/r\/knowledgebase\/validations\/#available-validations)\n\n![Screenshot: web app validations](\/\/images.contentful.com\/qz0n5cdakyl9\/6n41KgxfwWmmeCiSemIsK2\/8fe64869042e65dddb5178164bd2264f\/validations.png)\n\nValidierung in der Contentful web app.",
+        "notes": ""
+    },
+    "t7reksg8ogy8:4qT1W3HXewc0SscAs80UuA:copy": {
+        "translation": "Unter _Content-Modellierung_ versteht man die Art und Weise Inhalt zu strukturieren. Hier in Contentful, passiert dies durch _Content Types_. Ein Content Type kann man sich als Schema gleichen Inhalts vorstellen: Für jeden Content Type spezifiziert man dessen Eigenschaften, hier _Fields_ genannt. Diese _Fields_ repäsentieren ein Aspekt eines Content Types. \n\nSie können Content Types auch sich gegenseitig referenzieren lassen.\n\n## Der Content Type dieser Lektion\n\nDen Text den Sie hier lesen, wurde in Contentful gespeichert. Sein Content Type sieht wie folgt aus:\n\n- Lesson: wird benutzt um Inhalt zu grupieren und neu anzuordnen.\n- Lesson > Copy: Ein Block von Markdown-Text \n- Lesson > Code: Ein Block von Quellcode\n- Lesson > Image: Ein Bild\n\n![content-model-lesson](\/\/images.contentful.com\/qz0n5cdakyl9\/1nXjR47jxOagUcc8iU6wUQ\/54f18a32ed182a6fcb4f49f3ae242067\/content-model-lesson.svg)\n\nUm eine _Lektion_ zu modellieren, wählten wir auch hier wieder die modulare Sichtweise: Wir gaben dem Content Type _Lesson_ verschiedene Referenzen auf andere Content Types.\n\nDiese Herangehensweise ist für Autoren vorteilhaft, da sie Teile des Inhaltes so leicht neuanordnen können. Gleichzeitig können Entwickler die Kontrolle behalten, wie einzelne Teile an Inhalt dargestellt werden.\n\n\n## Das Content-Modell dieser Anwendung\n\nDas folgende Diagramm zeigt das gesamte Content-Modell dieser Anwendung:\n\nIn detail:\n\n- Der _Layout_ Content Type referenziert den _Highlighted course_ Content Type.\n- Der _Highlighted course_ Content Type referenziert den _Course_ content type.\n- Der _Course_ Content Type referenziert den _Lesson_ Content Type.\n\nMit diesem Wissen, können Sie nun die Hierarchie der Besipielanwendung erkunden. Dannach, erkunden Sie die Hierarchie der Content Types in der Contentful Webanwendung. Sobald Sie dies getan haben, wird Ihr Verständniss für die Interaktion zwischen Content-Modell und dessen Repräsentation innerhalb der Beispielanwendung sich verbessern.",
+        "notes": ""
+    },
+    "t7reksg8ogy8:3KinTi83FecuMeiUo0qGU4:title": {
+        "translation": "Zusammenfassung",
+        "notes": ""
+    },
+    "t7reksg8ogy8:7JhDodrNmwmwGmQqiACW4:title": {
+        "translation": "Anwendungsentwicklung",
+        "notes": ""
+    },
+    "t7reksg8ogy8:4Ng6zmj9e8Sw0eaYKQM8Es:copy": {
+        "translation": "Nun wissen Sie wie diese Beispielanwendung mit einem Contentful SDK gebaut wurde. Um Ihr Verständnis zu vertiefen, empfehlen wir Ihnen den Quellcode dieser Anwendung herunterzuladen und zu studieren. Falls Sie weitere Fragen haben, stehen wir Ihnen gerne mit unserer [Contentful Community](https:\/\/www.contentfulcommunity.com\/) oder unserem [Support](https:\/\/www.contentful.com\/support\/) zur Verfügung. Alternativ besuchen Sie unsere [tutorials](https:\/\/www.contentful.com\/developers\/docs\/tutorials\/) in der Developer Dokumentation. ",
+        "notes": ""
+    },
+    "t7reksg8ogy8:6gFiJvssqQ62CMYqECOu2M:caption": {
+        "translation": "Die Hierarchie der Content Types von der Startseite zu einer Lektion mit ihren Modulen.",
+        "notes": ""
+    },
+    "t7reksg8ogy8:15Cx6Bu1Y2qAkyq2yWgkK2:copy": {
+        "translation": "Benutzen Sie das SDK in ihrem eigenen Projekt und inizialisieren Sie den `Client` wie folgt:\n\n1. Fügen Sie den `import`-Ausdruck an.\n2. Konfigurieren Sie den `Client` mit der Space ID und dem Content Delivery Token.",
+        "notes": ""
+    },
+    "t7reksg8ogy8:3k6uoYm9i8MycCm42IsY62:copy": {
+        "translation": "Sind APIs neu für Sie? Ein API Token stellt sicher, das nur authorisierte Personen oder Anwendungen Zugriff auf ihren Space haben.",
+        "notes": ""
+    },
+    "t7reksg8ogy8:3Y1JQg9bjqIG6OgA2KAM4A:copy": {
+        "translation": "Um die Kommunikation mit Contentful so einfach wie nur möglich zu gestallten, haben wir verschiedene Open Source SDKs erzeugt.\n\nInstallieren Sie die SDKs wie folgt:",
+        "notes": ""
+    },
+    "t7reksg8ogy8:5WZ7JD9Hb2Myi6uYYSscIw:copy": {
+        "translation": "Nun, da Sie den Contentful `Client` konfiguriert haven, können Sie ihn benutzen um alle Einträge, sog. `Entries`, von Ihrem Space zu laden.",
+        "notes": ""
+    },
+    "t7reksg8ogy8:41fdMtrUzmiqKykUwA8u2A:caption": {
+        "translation": "Contentfuls APIs senden Daten im JSON-Format. Hierdurch kann Inhalt platformunabhängig benutzt werden.",
+        "notes": ""
+    },
+    "t7reksg8ogy8:2tV9n41tryO2QMwIkQUQeQ:copy": {
+        "translation": "Falls Sie verschiedene Sprachen in ihrem `Content Model` benutzen, können sie den übersetzten Inhalt wie folgt erhalten:",
+        "notes": ""
+    },
+    "t7reksg8ogy8:1HR1QvURo4MoSqO0eqmUeO:title": {
+        "translation": "Übersetzten Inhalt ausliefern",
+        "notes": ""
+    },
+    "t7reksg8ogy8:5mgMoU9aCWE88SIqSIMGYE:title": {
+        "translation": "SDK Basiswissen",
+        "notes": ""
+    },
+    "t7reksg8ogy8:1zwAjpe38UC8iqKMM6gu0Q:title": {
+        "translation": "Content Management",
+        "notes": ""
+    },
+    "t7reksg8ogy8:34MlmiuMgU8wKCOOIkAuMy:title": {
+        "translation": "Hallo SDKs",
+        "notes": ""
+    },
+    "t7reksg8ogy8:34MlmiuMgU8wKCOOIkAuMy:shortDescription": {
+        "translation": "Lernen Sie den Umgang mit unseren SDKs.",
+        "notes": ""
+    },
+    "t7reksg8ogy8:34MlmiuMgU8wKCOOIkAuMy:description": {
+        "translation": "Sobald Sie sich den Quellcode der Besipielanwendung ansehen, werden Sie ein Gespür entwickeln, wie Sie am besten die Contentful SDKs in Ihrer Programmiersprache benutzen. Für weitere, fremde Abhängigkeiten, schauen Sie bitte in der jewiligen Dokumentation nach.",
+        "notes": ""
+    },
+    "t7reksg8ogy8:5p9qNpTOJaCE6ykC4a8Wqg:title": {
+        "translation": "Content-Modell",
+        "notes": ""
+    },
+    "t7reksg8ogy8:58B62ubQbmIOiAkmq44kAo:copy": {
+        "translation": "Nun können sie die Sprache von Deutsch auf Englisch ändern, indem sie im obigen Menü den Eintrag `Sprache: German` auf `US English` ändern.",
+        "notes": ""
+    },
+    "t7reksg8ogy8:5jR4ciJ8Y8m2KKqmMKOkg4:copy": {
+        "translation": "In diesem Kurs haben sie die grundlegenden Konzepte von Contentful kennengelernt:\n\n- `API-first`-Denkweise von Contentful erleichtert die Verbindung von Contentful und Contentful-fremden Systemen.\n- Contentful ist `headless` und bietet sowohl JSON als auch binäre Antworten an.\n- Eine `Client`-Anwendung die Inhalte von Contentful verarbeitet, hat stets die volle Kontrolle über visuelle representation des Inhalts.\n- Datenmodellierung innerhalb von Contentful benutzt flexible Content Typen, die entkoppelt von der Presentation ist.\n- Die Contentful Web-Anwendung ist ein einfach zu verwendender Editor.",
+        "notes": ""
+    },
+    "t7reksg8ogy8:6ucY5w3oswEU6EYSCEi0C8:title": {
+        "translation": "Einstiegskurs",
+        "notes": ""
+    },
+    "t7reksg8ogy8:1AqQQzRvKAkEOekuMUcQIY:copy": {
+        "translation": "Der Aufbau einer einfachen Anwendung die Contentful benutzt, besteht aus einer Anwendung, die den Inhalt liest, wie zum Beispiel diese Beispielanwendung und einer Weiteren, die den Inhalt erzeugt und verändert. Dies ist die Contentful Web-Anwendung. Die Anwendung liest den Inhalt, indem sie sich mit der Content Delivery API verbindet. Die Contentful Web-Anwendung schreibt Inhalt indem sie mit der Content Management API verbunden ist:\n\n![minimal contentful setup](\/\/images.contentful.com\/qz0n5cdakyl9\/3z7ErmBLIccwQkQkuEY0w4\/792f81c7d92d195abf89ea936071d1f6\/webapp-contentful-example-app.svg)\n\nDie *Contentful Web-Anwendung* ist eine _single page_ Anwendung, die von Contentful zur Verfügung gestellt wird, um alle Aufgaben rund ums Content Management zu erledigen:\n\n- Schreiben von Inhalten durch Autoren.\n- Einrichten des Spaces, der Content Types, Zugriffsrechte und Webhook-Benachrichtigungen durch Entwickler.\n\nWie bereits erwähnt, benutzt die Contentful Web-Anwendung die Content Management API. Daher können Sie diese Funktionen selber nachbauen, indem Sie die gleichen API-Anfragen durchführen. Dies ist ein sehr mächtiger Aspekt der _API-First_-Sichtweise, da sie Ihnen hilft Contentful in Contentful-fremden Systemen einzusetzen.",
+        "notes": ""
+    },
+    "t7reksg8ogy8:7iCSSldqDuUkG4GWa46uUq:copy": {
+        "translation": "## API-first\n\nContentful folgt der API-First-Denkweise, dies bedeutet, dass alle Funktionalitäten durch die API zur Verfügung gestellt werden.\n\nD.h. Sie können:\n- Datenschemata verändern, oder Webhooks durch die Content Managewment API konfigurieren.\n- Platformunabhängigen Inhalt mittels unserer Contend Delivery API verteilen.\n- Entwürfe von unveröffentlichten Inhalt durch unsere Content Preview API begutachten.\n- Bilder skalieren, schneiden oder erneut komprimieren unter zuhilfenahme unserer Images API.\n\n![api first](\/\/images.contentful.com\/qz0n5cdakyl9\/1YK5kwroV6UEGS64mQs0Eo\/c19b700d5c8d0f44b758c4b2bb79c586\/contentful-four-apis.svg)\n\nContentful ist ein sogennantes `Headless CMS`, das bedeuted, das kein `Templating` und kein Präsentationslayer fest mit Ihrem Inhalt verbunden ist. Stattdessen hat ein Entwickler die komplette Freiheit eine Anwendung zu bauen die Contentful benutzt. Auf diese Art und Weise, können Sie Ihre Anwendung komplett von Contentful entkoppeln können.\n\nDies sind die minimalen Anforderungen von Contentful:\n\n- Unterstützung des Protokolls HTTP\n- Verarbeitung von JSON-Daten\n\nMehr ist nicht nötig, Sie haben die Freiheit sich Ihre Technologie selbst auszusuchen.",
+        "notes": ""
+    },
+    "t7reksg8ogy8:1toEOumnkEksWakieoeC6M:title": {
+        "translation": "Hallo Contentful",
+        "notes": ""
+    },
+    "t7reksg8ogy8:1toEOumnkEksWakieoeC6M:shortDescription": {
+        "translation": "Lernen Sie, wie Sie Anwendungen mit Contentful bauen können.",
+        "notes": ""
+    },
+    "t7reksg8ogy8:1toEOumnkEksWakieoeC6M:description": {
+        "translation": "Diese Beispielanwendung hilft Ihnen, Ihre eigene Anwendung mittels Contentful zu bauen. Sie enthält Module, die Ihnen verschiedene Grundkonzepte näher bringen, Content-Modellierung erklärt und sie erläutert, wie Ihre eigene Anwendung Inhalt von Contentful verarbeitet. Der Inhalt wird von den APIs von Contentful unter zuhilfenahme von Contentful SDKs zurverfügung gestellt. \n\nDie Benutzeroberfläche dieses Beispieles wird nur von dem Beispiel selbst benutzt und bediehnt sich _keines_ Templates. Dies ist Absicht, da es sich bei Contentful um ein `Headless CMS` handelt. Was dies bedeuted, wird später nocheinmal verdeutlicht.   \n\nFolgende Themen werden von diesem Kurs abgehandelt:\n\n- **Die APIs von Contentful**: Komponenten von Contentful.\n- **Content-Modellierung**: Das Content-Modell der Anwendung.\n- **Integration mit Contentful**: Wie wurde diese Anwendung mit Contentful verbunden?",
+        "notes": ""
+    },
+    "t7reksg8ogy8:4ZSO7N8cqB00WvCnx9IJ6N:title": {
+        "translation": "Standart kategori",
+        "notes": ""
+    },
+    "t7reksg8ogy8:1toEOumnkEksWakieoeC6M:rich": {
+        "translation": "",
+        "notes": ""
+    },
+    "t7reksg8ogy8:4ZSO7N8cqB00WvCnx9IJ6N:tags:0": {
+        "translation": "",
+        "notes": ""
+    },
+    "t7reksg8ogy8:4ZSO7N8cqB00WvCnx9IJ6N:tags:1": {
+        "translation": "",
+        "notes": ""
+    },
+    "t7reksg8ogy8:4ZSO7N8cqB00WvCnx9IJ6N:tags:2": {
+        "translation": "",
+        "notes": ""
+    },
+    "t1upkrozfwgb:7rUypCHpaawOfAzd6ndudJ:tags:0": {
+        "translation": "",
+        "notes": ""
+    },
+    "t1upkrozfwgb:7rUypCHpaawOfAzd6ndudJ:tags:1": {
+        "translation": "",
+        "notes": ""
+    },
+    "t1upkrozfwgb:7rUypCHpaawOfAzd6ndudJ:list:0": {
+        "translation": "",
+        "notes": ""
+    },
+    "t1upkrozfwgb:7rUypCHpaawOfAzd6ndudJ:list:1": {
+        "translation": "",
+        "notes": ""
+    },
+    "key": {
+        "translation": "",
+        "notes": ""
+    }
+}
