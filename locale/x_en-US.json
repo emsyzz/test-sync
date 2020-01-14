@@ -1,0 +1,210 @@
+{
+    "my.key": {
+        "translation": "Key data updated",
+        "notes": ""
+    },
+    "t7reksg8ogy8:4ZQtjYftNKaoKWuksM0sS0:copy": {
+        "translation": "Key data updated",
+        "notes": ""
+    },
+    "t7reksg8ogy8:Dy6jo5j4goU2C4sc8Kwkk:title": {
+        "translation": "Fetch draft content",
+        "notes": ""
+    },
+    "t7reksg8ogy8:1wMm7tnKi0kIYsI24eYiKS:copy": {
+        "translation": "Before publishing your content, you can preview it using the Content Preview API. The Preview API and Delivery API both accept the same parameters and return the same payload structures.\n\nTo fetch preview content, change the configuration of the client to use the Preview API token:",
+        "notes": ""
+    },
+    "dsf": {
+        "translation": "",
+        "notes": ""
+    },
+    "dsfd": {
+        "translation": "",
+        "notes": ""
+    },
+    "dsfdc": {
+        "translation": "",
+        "notes": ""
+    },
+    "dsfdccc": {
+        "translation": "",
+        "notes": ""
+    },
+    "dsfdcccv": {
+        "translation": "",
+        "notes": ""
+    },
+    "rgsdfg": {
+        "translation": "",
+        "notes": ""
+    },
+    "sdf": {
+        "translation": "",
+        "notes": ""
+    },
+    "t7reksg8ogy8:3jkW4CdxPqu8Q2oSgCeOuy:title": {
+        "translation": "Fetch all entries",
+        "notes": ""
+    },
+    "t7reksg8ogy8:3op5VIqGZiwoe06c8IQIMO:title": {
+        "translation": "APIs",
+        "notes": ""
+    },
+    "t7reksg8ogy8:5VWYVBc39Cia0sqqaeyiIW:title": {
+        "translation": "Summary",
+        "notes": ""
+    },
+    "t7reksg8ogy8:5DtGCVHfr2OC2Is6KceS0G:caption": {
+        "translation": "The Contentful web app is a single page application sitting on top of our Content Management API. It can be used as an interface for content writers as well as for setup tasks.",
+        "notes": ""
+    },
+    "t7reksg8ogy8:3UVMv9wHuw4auWMQ0qSamY:copy": {
+        "translation": "## Field validation\nCreating validation rules at the field level ensures that information is handled consistently. An example of why this is important is that you could prevent malformed data from crashing an application in production.\n\nSome other common validation rules for fields include character limits and enforcing specific values, such as `Beginner`, `Intermediate`, or `Advanced`. The following resources have a complete list of fields and available field validations:\n\n- [Fields](https:\/\/www.contentful.com\/developers\/docs\/concepts\/data-model\/#fields)\n- [Available validations](https:\/\/www.contentful.com\/r\/knowledgebase\/validations\/#available-validations)\n\n![Screenshot: web app validations](\/\/images.contentful.com\/qz0n5cdakyl9\/6n41KgxfwWmmeCiSemIsK2\/8fe64869042e65dddb5178164bd2264f\/validations.png)\n\n_The proceeding screenshot shows example validations within the Contentful web app._",
+        "notes": ""
+    },
+    "t7reksg8ogy8:4qT1W3HXewc0SscAs80UuA:copy": {
+        "translation": "_Content modelling_ is the practice of structuring your content. At Contentful, you do this by creating _content types_. Think of a content type as a schema for bits of content that are similar. For each content type, you populate its fields. Each field represents one piece of data of a specific type.\n\nYou can reference one content type from another to define relationships between them.\n\n## The content model of this lesson\n\nThe text that you're reading now is stored in Contentful. Its content type structure is as follows:\n\n- **Lesson**: Used to group and arrange content\n- **Lesson > Copy**: One chunk of markdown content\n- **Lesson > Code**: One chunk of code in different languages\n- **Lesson > Image**: An image\n\n![content-model-lesson](\/\/images.contentful.com\/qz0n5cdakyl9\/1nXjR47jxOagUcc8iU6wUQ\/54f18a32ed182a6fcb4f49f3ae242067\/content-model-lesson.svg)\n\nTo model a _lesson_, we chose a modular approach where the content type called _Lesson_ uses a reference field that contains references to other content types.\n\nThis approach is beneficial because content creators can arrange chunks of information in any order they want. Meanwhile, developers can control the how each chunk of information is presented.\n\n## The content model of this application\n\nThe following diagram displays the entire content model of this application, including: \n\n- The _Layout_ content type references the _Highlighted course_ content type\n- The _Highlighted course_ content type references the _Course_ content type\n- The _Course_ content type references the _Lesson_ content type\n\nKnowing this, you can look into the hierarchy of this example app. Then, check out the corresponding hierarchy of the content types in the Contentful web app. Exploring the setup of this application will help strengthen your understanding of the relationships between the content model. Additionally, it shows how this is represented within this example app and the Contentful web app.",
+        "notes": ""
+    },
+    "t7reksg8ogy8:3KinTi83FecuMeiUo0qGU4:title": {
+        "translation": "Summary",
+        "notes": ""
+    },
+    "t7reksg8ogy8:7JhDodrNmwmwGmQqiACW4:title": {
+        "translation": "Application development",
+        "notes": ""
+    },
+    "t7reksg8ogy8:4Ng6zmj9e8Sw0eaYKQM8Es:copy": {
+        "translation": "Congratulations! Now you know how the example app was built using the Contentful SDK. Feel free download the source code and interact with it. If you have any questions, head over to the [Contentful Community](https:\/\/www.contentfulcommunity.com\/) forum or [contact support](https:\/\/www.contentful.com\/support\/). Or head to our [tutorials section](https:\/\/www.contentful.com\/developers\/docs\/tutorials\/) in the developer documentation ",
+        "notes": ""
+    },
+    "t7reksg8ogy8:6gFiJvssqQ62CMYqECOu2M:caption": {
+        "translation": "The full content type hierarchy from the home route down to a lesson with lesson modules.",
+        "notes": ""
+    },
+    "t7reksg8ogy8:15Cx6Bu1Y2qAkyq2yWgkK2:copy": {
+        "translation": "Include the SDK in your project and initialize a client: \n\n1. Add the import statement\n2. Configure a client with your space ID and Content Delivery API token",
+        "notes": ""
+    },
+    "t7reksg8ogy8:3k6uoYm9i8MycCm42IsY62:copy": {
+        "translation": "New to APIs? An API token ensures that only an authorized person or application can pull content from your space.",
+        "notes": ""
+    },
+    "t7reksg8ogy8:3Y1JQg9bjqIG6OgA2KAM4A:copy": {
+        "translation": "To make communication with Contentful as simple as possible, we've created open source SDKs.\n\nInstall an SDK:",
+        "notes": ""
+    },
+    "t7reksg8ogy8:5WZ7JD9Hb2Myi6uYYSscIw:copy": {
+        "translation": "Now that you have configured a Contentful client, you can use it to fetch all of the entries in your Contentful space:",
+        "notes": ""
+    },
+    "t7reksg8ogy8:41fdMtrUzmiqKykUwA8u2A:caption": {
+        "translation": "Contentful's APIs send data in JSON format which enables cross channel distribution of content.",
+        "notes": ""
+    },
+    "t7reksg8ogy8:2tV9n41tryO2QMwIkQUQeQ:copy": {
+        "translation": "If you have configured different locales within your content model, you can fetch that localized content:",
+        "notes": ""
+    },
+    "t7reksg8ogy8:1HR1QvURo4MoSqO0eqmUeO:title": {
+        "translation": "Serve localized content",
+        "notes": ""
+    },
+    "t7reksg8ogy8:5mgMoU9aCWE88SIqSIMGYE:title": {
+        "translation": "SDK basics",
+        "notes": ""
+    },
+    "t7reksg8ogy8:1zwAjpe38UC8iqKMM6gu0Q:title": {
+        "translation": "Content management",
+        "notes": ""
+    },
+    "t7reksg8ogy8:34MlmiuMgU8wKCOOIkAuMy:title": {
+        "translation": "Hello SDKs",
+        "notes": ""
+    },
+    "t7reksg8ogy8:34MlmiuMgU8wKCOOIkAuMy:shortDescription": {
+        "translation": "Learn about best practices when using our SDKs.",
+        "notes": ""
+    },
+    "t7reksg8ogy8:34MlmiuMgU8wKCOOIkAuMy:description": {
+        "translation": "By looking at the code of the example app, you'll get a sense of how to use a Contentful SDK in your favorite programming language.",
+        "notes": ""
+    },
+    "t7reksg8ogy8:5p9qNpTOJaCE6ykC4a8Wqg:title": {
+        "translation": "Content model",
+        "notes": ""
+    },
+    "t7reksg8ogy8:58B62ubQbmIOiAkmq44kAo:copy": {
+        "translation": "Switch the language of this text from English to German by going to `Locale: U.S. English` in the top menu bar and selecting `German`.",
+        "notes": ""
+    },
+    "t7reksg8ogy8:5jR4ciJ8Y8m2KKqmMKOkg4:copy": {
+        "translation": "In this course, we went through the basic concepts of Contentful:\n\n- Contentful’s API-first approach facilitates connecting Contentful with third-party systems\n- Contentful has no built-in templates and provides JSON as well as binaries as outputs\n- A client application created with Contentful is in full control of its presentation\n- Data modeling with Contentful uses flexible content types that are decoupled from presentation\n- The Contentful web app is an easy-to-use editor for authoring content\n\nIf you have any questions, head over to the [Contentful Community](https:\/\/www.contentfulcommunity.com\/) forum or [contact support](https:\/\/www.contentful.com\/support\/).\n",
+        "notes": ""
+    },
+    "t7reksg8ogy8:6ucY5w3oswEU6EYSCEi0C8:title": {
+        "translation": "Getting started",
+        "notes": ""
+    },
+    "t7reksg8ogy8:1AqQQzRvKAkEOekuMUcQIY:copy": {
+        "translation": "A basic Contentful setup consists of a client application reading content, this example app for instance, and another application that is writing content, like the Contentful web app. The client application is reading content by connecting to the Content Delivery API. The Contentful web app, on the other hand, is writing content by connecting to the Content Mangement API:\n\n![minimal contentful setup](\/\/images.contentful.com\/qz0n5cdakyl9\/3z7ErmBLIccwQkQkuEY0w4\/792f81c7d92d195abf89ea936071d1f6\/webapp-contentful-example-app.svg)\n\nThe Contentful web app is a single page application created by Contentful and assists with common content management tasks. The Contentful web app provides:\n\n-  An interface for editors to write content\n- An interface for developers to configure a space, model data, define roles and permissions, and set up webhook notifications\n\nAs mentioned, the Contentful web app is a client that uses the Content Management API. Therefore, you could replicate the functionality that the Contentful web app provides by making an API call. This is a powerful aspect of an API-first design because it helps you to connect Contentful to third-party systems.",
+        "notes": ""
+    },
+    "t7reksg8ogy8:7iCSSldqDuUkG4GWa46uUq:copy": {
+        "translation": "## API-first\n\nContentful follows an API-first approach, which means that all of its functionality is provided by an API.\n\nThis enables you to:\n\n- Modify data schemas or configure a webhook through the Content Management API\n- Deliver cross-channel content through the Content Delivery API\n- Preview unpublished content through the Content Preview API\n- Resize, crop, or re-compress images through the Images API\n\n![api first](\/\/images.contentful.com\/qz0n5cdakyl9\/1YK5kwroV6UEGS64mQs0Eo\/c19b700d5c8d0f44b758c4b2bb79c586\/contentful-four-apis.svg)\n\nContentful is a content infrastructure, so there is no templating or presentation layer tied to the content. Instead, a developer has total freedom when it comes to the build of an application that consumes and presents content from Contentful. This also allows you to decouple your applications from Contentful's services.\n\nContentful has minimal requirements:\n\n- Support for HTTP\n- Parsing of JSON\n\nBeyond that, you are free to choose any technology you want.",
+        "notes": ""
+    },
+    "t7reksg8ogy8:1toEOumnkEksWakieoeC6M:title": {
+        "translation": "Hello Contentful!",
+        "notes": ""
+    },
+    "t7reksg8ogy8:1toEOumnkEksWakieoeC6M:shortDescription": {
+        "translation": "Learn how to build your own applications with Contentful.",
+        "notes": ""
+    },
+    "t7reksg8ogy8:1toEOumnkEksWakieoeC6M:description": {
+        "translation": "<p>It’s easy to feel like your mood is something that ‘just happens’ to you but it’s actually influenced by a whole range of things. The main benefit of keeping track of your mood is that it helps you to understand what these things are – both positive and negative – and how you can develop strategies to deal with them.<\/p><p>In a bit more detail, here are 5 ways that tracking your mood can be helpful:<\/p><p><strong>1. Feel more in control of your mood<\/strong><\/p><p>By gaining a better understanding of your mood, you can get a deeper insight into your life in general. It can allow you to gain a wider view of what, who and when has an influence on how you feel. That isn’t to say that you can design how you might feel at any given moment, but it can help you to understand what makes you feel the way you do. And this can stop you from feeling like a passenger, and put you more in the driving seat. <\/p><p><strong>2. Identify negative influences<\/strong><\/p><p>Track your mood to see patterns that show what puts you in negative moods. That might be something to do with your work, your personal life, what you eat, or something else. <\/p><p><strong>3. Spot things that work well<\/strong><\/p><p>Similarly, you can see things that have a positive influence on you and help you to feel good. And, if you are taking steps to avoid negative influences, it can show you whether you’re being successful.\t<\/p><p><strong>4. Plan ahead<\/strong><\/p><p>Recording your mood is far more than simply keeping a record of how you have felt in the past – it’s all about helping you to plan for the future armed with useful information. <\/p><p><strong>5. Help others to help you<\/strong><\/p><p>If you want to speak to a health professional about your mood and emotions, mood tracking means that you have a detailed history that you can show them. This can be extremely valuable and help them to provide you with more personalised advice.<\/p><p>So if you haven’t tried mood tracking before, give it a go to see whether you find it useful.<\/p>",
+        "notes": ""
+    },
+    "t7reksg8ogy8:4ZSO7N8cqB00WvCnx9IJ6N:title": {
+        "translation": " It’s easy",
+        "notes": ""
+    },
+    "t7reksg8ogy8:1toEOumnkEksWakieoeC6M:rich": {
+        "translation": "<p>Modified source x2. It’s easy to feel like your mood is something that ‘just happens’ to you but it’s actually influenced by a whole range of things. The main benefit of keeping track of your mood is that it helps you to understand what these things are – both positive and negative – and how you can develop strategies to deal with them.<\/p><p>In a bit more detail, here are 5 ways that tracking your mood can be helpful:<\/p><p><strong>1. Feel more in control of your mood<\/strong><\/p><p>By gaining a better understanding of your mood, you can get a deeper insight into your life in general. It can allow you to gain a wider view of what, who and when has an influence on how you feel. That isn’t to say that you can design how you might feel at any given moment, but it can help you to understand what makes you feel the way you do. And this can stop you from feeling like a passenger, and put you more in the driving seat. <\/p><p><strong>2. Identify negative influences<\/strong><\/p><p>Track your mood to see patterns that show what puts you in negative moods. That might be something to do with your work, your personal life, what you eat, or something else. <\/p><p><strong>3. Spot things that work well<\/strong><\/p><p>Similarly, you can see things that have a positive influence on you and help you to feel good. And, if you are taking steps to avoid negative influences, it can show you whether you’re being successful.\t<\/p><p><strong>4. Plan ahead<\/strong><\/p><p>Recording your mood is far more than simply keeping a record of how you have felt in the past – it’s all about helping you to plan for the future armed with useful information. <\/p><p><strong>5. Help others to help you<\/strong><\/p><p>If you want to speak to a health professional about your mood and emotions, mood tracking means that you have a detailed history that you can show them. This can be extremely valuable and help them to provide you with more personalised advice.<\/p><p>So if you haven’t tried mood tracking before, give it a go to see whether you find it useful.<\/p>",
+        "notes": ""
+    },
+    "t7reksg8ogy8:4ZSO7N8cqB00WvCnx9IJ6N:tags:0": {
+        "translation": "",
+        "notes": ""
+    },
+    "t7reksg8ogy8:4ZSO7N8cqB00WvCnx9IJ6N:tags:1": {
+        "translation": "",
+        "notes": ""
+    },
+    "t7reksg8ogy8:4ZSO7N8cqB00WvCnx9IJ6N:tags:2": {
+        "translation": "",
+        "notes": ""
+    },
+    "t1upkrozfwgb:7rUypCHpaawOfAzd6ndudJ:tags:0": {
+        "translation": "",
+        "notes": ""
+    },
+    "t1upkrozfwgb:7rUypCHpaawOfAzd6ndudJ:tags:1": {
+        "translation": "",
+        "notes": ""
+    },
+    "t1upkrozfwgb:7rUypCHpaawOfAzd6ndudJ:list:0": {
+        "translation": "",
+        "notes": ""
+    },
+    "t1upkrozfwgb:7rUypCHpaawOfAzd6ndudJ:list:1": {
+        "translation": "",
+        "notes": ""
+    },
+    "key": {
+        "translation": "",
+        "notes": ""
+    }
+}
